@@ -179,8 +179,14 @@ Use the filterByWord function below to do the following:
 */
 
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(array, string){
+  const chocoFlavors =[];
+  for(let i = 0; i < array.length; i++) {
+    if(array[i].includes('Chocolate')){
+      chocoFlavors.push(array[i])
+    }
+  }
+  return (chocoFlavors);
 }
 
 
